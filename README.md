@@ -8,7 +8,18 @@ but it also provides additional advanced features, making it an indispensable ap
 ## Features
 - Content Summarization: Quickly generate concise summaries of lengthy content.
 - Chapterized Full Content Generation: Automatically divide and structure the entire content intowell-organized chapters for easy navigation and understanding.
-- Real-Time Processing and Results: View the results in real time as the content is processed, ensuring immediate access to insights.
+- Real-Time Processing and Results: View the results in real-time as the content is processed, ensuring immediate access to insights.
 - Downloadable PDF Output: Save the processed content or summary as a professionally formatted PDF for future reference or sharing.
 - Real-Time Information Retrieval: Instantly access specific details or insights related to the content for enhanced decision-making and comprehension.
-- 
+
+## Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-project.git
+2. Navigate to the directory:
+    ```bash
+   cd your-project
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
