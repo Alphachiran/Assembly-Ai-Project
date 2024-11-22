@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssemblyAI Web App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1 class="TOPIC">Summarization and Q&A App</h1>
+
+    <form id="uploadForm">
+        <input type="file" id="fileInput" required>
+        <button type="submit">Upload</button>
+    </form>
+    <p style="color: red;">(Upload only A Video file or a Audio file)</p>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <p style="color: rgb(0, 221, 255);" id="transcriptId"></p>
+
+
+    <button id="summaryBtn">Generate Content Summary</button>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <p style="color: rgb(0, 221, 255);" id="summeryid"></p>
+
+    <div class="faq">
+        <button type="button" class="faq-title"><span class="faq-question">Click to open</span><span
+                class="faq-emoji">+</span></button>
+        <div class="faq-content">
+            <p style="color: hsl(0, 0%, 100%);" id="summary"><b>Please upload files and Click the Button</b></p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <button id="autoBtn">Genarate Full Summary</button>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <p style="color: rgb(0, 221, 255);" id="Chapter"></p>
+
+
+    <div class="faq">
+
+        <button type="button" class="faq-title"><span class="faq-question">Click to open</span><span
+                class="faq-emoji">+</span></button>
+
+        <div class="faq-content">
+            <p style="color: hsl(0, 0%, 100%);" id="savedAnswer"><b>Please upload files and Click the Button</b></p>
+        </div>
+    </div>
+
+
+    <button class="dbutton" id="downloadBtn">Click to Download</button>
+    <br>
+    <br>
+    <br>
+
+    <input type="text" id="questionInput1" class="styled-input" placeholder="Ask questions..">
+    <button id="askBtn1">Submit</button>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <p style="color: rgb(0, 221, 255);" id="AskQ"></p>
+
+    <div class="faq">
+
+        <button type="button" class="faq-title"><span class="faq-question">Click to See The Answers</span><span
+                class="faq-emoji">+</span></button>
+
+        <div class="faq-content">
+            <p style="color: hsl(0, 0%, 100%);" id="answer1"><b>Please upload a file and Ask a Question</b></p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <button id="getTrancribe">Generate the Full Trancribe</button>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    <div class="faq">
+        <button type="button" class="faq-title"><span class="faq-question">Click to Open</span><span
+                class="faq-emoji">+</span></button>
+
+        <div class="faq-content">
+            <p style="color: rgb(0, 255, 187);" id="getTrancribedbtn"><b>Please upload files and Click the Button</b>
+            </p>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+
+</body>
+
+</html>

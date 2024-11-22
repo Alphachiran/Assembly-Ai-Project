@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+    background-image: url("rm380-20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+
+}
+/* Attractive Button Style */
+button {
+  background-color: hwb(0 0% 100%); /* Green */
+  border: none;
+  color: rgb(15, 222, 43);
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 4px 8px rgb(255, 5, 5);
+}
+
+button:hover {
+  background-color: hwb(0 1% 89% / 0.831); /* Darker green */
+  transform: translateY(-3px); /* Hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  background-color: hwb(0 1% 89% / 0.831);
+  box-shadow: 2px 4px 8px rgb(255, 5, 5);
+  transform: translateY(0); /* Remove hover effect */
+  
+
+}
+
+.dbutton{
+  background-color: hwb(0 0% 100%); /* Green */
+  border: none;
+  color: rgb(15, 222, 43);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 9px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 4px 8px rgb(255, 5, 5);
+}
+
+.TOPIC{
+  color: chartreuse;
+}
+
+
+
+#uploadForm{
+  display: inline-block;
+  margin:  0;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: aqua;
+}
+  
+.faq {
+  border-bottom: 1px solid white;
+}
+
+.faq-title {
+  background: none;
+  border: none;
+  width: 50%;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  align-items: center; /* Vertically align emoji and text */
+  justify-content: space-between; /* Push text to the left and emoji to the right*/
+  display: flex; 
+  margin-left: 25%;
+}
+
+.faq-title:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-content p {
+  padding: 15px;
+  background-color: #4f00e2b9;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  
+}
+
+
+.loader {
+  display: none;
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  perspective: 800px;
+}
+
+.inner {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;  
+}
+
+.inner.one {
+  left: 0%;
+  top: 0%;
+  animation: rotate-one 1s linear infinite;
+  border-bottom: 3px solid hwb(88 3% 0%);
+}
+
+.inner.two {
+  right: 0%;
+  top: 0%;
+  animation: rotate-two 1s linear infinite;
+  border-right: 3px solid #EFEFFA;
+}
+
+.inner.three {
+  right: 0%;
+  bottom: 0%;
+  animation: rotate-three 1s linear infinite;
+  border-top: 3px solid #3c00ff;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+/* Input Container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field */
+.styled-input {
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input Field: Focus State */
+.styled-input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
